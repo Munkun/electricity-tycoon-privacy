@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - Electricity Tycoon</title>
+    <title>Gizlilik Politikasi - Electricity Tycoon</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -49,38 +49,125 @@
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
         a { color: #2563eb; }
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #f9f9f9;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="nav">
+            <a href="index.html">Gizlilik Politikasi</a>
+            <a href="delete-account.html">Hesap Silme</a>
+        </div>
         <div class="card">
-            <h1>Gizlilik Politikası</h1>
-            <p class="last-updated">Son güncelleme: 31 Mart 2025</p>
+            <h1>Privacy Policy / Gizlilik Politikasi</h1>
+            <p class="last-updated">Last updated / Son guncelleme: March 31, 2025</p>
 
-            <p><strong>Electricity Tycoon</strong> ("Uygulama") olarak kullanıcılarımızın gizliliğine büyük önem veriyoruz. Bu gizlilik politikası, uygulamamızı kullanırken hangi verilerin toplandığını, nasıl kullanıldığını ve nasıl korunduğunu açıklamaktadır.</p>
+            <p><strong>Electricity Tycoon</strong> ("App") values the privacy of its users. This privacy policy explains what data is collected when you use our app, how it is used, and how it is protected.</p>
+            <p><strong>Electricity Tycoon</strong> ("Uygulama") olarak kullanicilarin gizliligine buyuk onem veriyoruz. Bu gizlilik politikasi, uygulamamizi kullanirken hangi verilerin toplandigini, nasil kullanildigini ve nasil korundugunuaciklamaktadir.</p>
 
-            <h2>1. Toplanan Veriler</h2>
-            <p>Uygulamamız, kullanıcılardan kişisel veri toplamamaktadır. Uygulama tamamen çevrimdışı çalışmakta olup herhangi bir kişisel bilgi (ad, e-posta, telefon numarası vb.) talep etmez veya saklamaz.</p>
+            <h2>1. Collected Data / Toplanan Veriler</h2>
+            <p>Our app collects the following data through Firebase services:</p>
+            <table>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Purpose</th>
+                    <th>Stored Where</th>
+                </tr>
+                <tr>
+                    <td>Anonymous user ID</td>
+                    <td>Cloud save &amp; progress sync</td>
+                    <td>Firebase Authentication</td>
+                </tr>
+                <tr>
+                    <td>Google account info (if linked)</td>
+                    <td>Optional sign-in for cross-device sync</td>
+                    <td>Firebase Authentication</td>
+                </tr>
+                <tr>
+                    <td>Game progress data</td>
+                    <td>Cloud save backup</td>
+                    <td>Firebase Firestore</td>
+                </tr>
+                <tr>
+                    <td>Gameplay analytics</td>
+                    <td>Game balance improvement</td>
+                    <td>Firebase Analytics</td>
+                </tr>
+            </table>
 
-            <h2>2. Cihaz Bilgileri</h2>
-            <p>Uygulamamız cihazınızdan herhangi bir tanımlayıcı bilgi (cihaz kimliği, reklam kimliği vb.) toplamamaktadır.</p>
-
-            <h2>3. Üçüncü Taraf Hizmetleri</h2>
-            <p>Uygulamamız herhangi bir üçüncü taraf analiz, reklam veya izleme hizmeti kullanmamaktadır. Kullanıcı verileri hiçbir üçüncü tarafla paylaşılmaz.</p>
-
-            <h2>4. Çocukların Gizliliği</h2>
-            <p>Uygulamamız her yaş grubuna uygundur. 13 yaşından küçük çocuklardan bilerek kişisel veri toplamıyoruz. Uygulama herhangi bir kişisel veri toplamadığından, çocukların gizliliği konusunda ek bir risk bulunmamaktadır.</p>
-
-            <h2>5. Veri Güvenliği</h2>
-            <p>Uygulamamız kişisel veri toplamadığından, veri ihlali riski bulunmamaktadır. Oyun ilerleme verileri yalnızca cihazınızda yerel olarak saklanır.</p>
-
-            <h2>6. Değişiklikler</h2>
-            <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada yayınlanacaktır. Uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
-
-            <h2>7. İletişim</h2>
-            <p>Gizlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
+            <h2>2. Analytics Events / Analitik Olaylari</h2>
+            <p>We collect anonymous gameplay events to improve game balance:</p>
             <ul>
-                <li>E-posta: <a href="mailto:muniversestudio@gmail.com">muniversestudio@gmail.com</a></li>
+                <li>Chapter progression (which level the player reached)</li>
+                <li>Equipment purchases</li>
+                <li>Session start/end</li>
+                <li>Premium purchases</li>
+            </ul>
+            <p>These events do <strong>not</strong> contain personal information. They are aggregated and used solely for improving the game experience.</p>
+
+            <h2>3. Third-Party Services / Ucuncu Taraf Hizmetleri</h2>
+            <p>Our app uses the following third-party services:</p>
+            <ul>
+                <li><strong>Firebase Authentication</strong> - for anonymous and Google sign-in (<a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a>)</li>
+                <li><strong>Firebase Firestore</strong> - for cloud save storage</li>
+                <li><strong>Firebase Analytics</strong> - for anonymous gameplay analytics</li>
+            </ul>
+            <p>We do <strong>not</strong> use any advertising SDKs. We do <strong>not</strong> sell or share user data with third parties for advertising purposes.</p>
+
+            <h2>4. Children's Privacy / Cocuklarin Gizliligi</h2>
+            <p>Our app is suitable for all age groups. We do not knowingly collect personal data from children under 13. The anonymous authentication system does not require any personal information to use the app.</p>
+
+            <h2>5. Data Security / Veri Guvenligi</h2>
+            <p>All data transmitted between the app and Firebase servers is encrypted via HTTPS/TLS. Game progress data stored locally on the device is not accessible to other apps.</p>
+
+            <h2>6. Data Retention / Veri Saklama</h2>
+            <p>Your data is retained as long as your account exists. You can delete your account and all associated data at any time:</p>
+            <ul>
+                <li><strong>In-app:</strong> Settings &gt; Delete My Account</li>
+                <li><strong>Web:</strong> <a href="delete-account.html">Account Deletion Page</a></li>
+            </ul>
+
+            <h2>7. Your Rights / Haklariniz</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Request deletion of your account and all associated data</li>
+                <li>Use the app without linking a Google account (anonymous mode)</li>
+                <li>Opt out of cloud saves by not signing in with Google</li>
+            </ul>
+
+            <h2>8. Changes / Degisiklikler</h2>
+            <p>We may update this privacy policy from time to time. Changes will be published on this page. Continued use of the app constitutes acceptance of the updated policy.</p>
+
+            <h2>9. Contact / Iletisim</h2>
+            <p>For questions about our privacy policy:</p>
+            <ul>
+                <li>E-mail: <a href="mailto:muniversestudio@gmail.com">muniversestudio@gmail.com</a></li>
             </ul>
         </div>
     </div>
